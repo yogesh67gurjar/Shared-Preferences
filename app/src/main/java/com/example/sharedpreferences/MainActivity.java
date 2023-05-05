@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         binding.putDataBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // yha apn sharedPreferences me hr type ka jis jis bhi type ka data possible he daalna wo daal rhe he
+
                 Set<String> stringSet = new HashSet<>();
                 stringSet.add("yogesh");
                 stringSet.add("gurjar");
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
         binding.deleteDataBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // yha apn hr trh ka data delete kr rhe he
+
+
                 if (sharedPreferences.contains("int")) {
 
                     editor.remove("int");
